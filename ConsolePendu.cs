@@ -12,9 +12,33 @@ namespace Pendu
 {
     public partial class Pendu : Form
     {
+        private int Scorepartie;
+        private int Scoremanche;
+        private int Max_Tours;
+        private static string M_a_D;
+        //public char[] Mot_Courant;
+        private static string[] Lexique;
         public Pendu()
         {
             InitializeComponent();
+            MainMenu mainMenu = new MainMenu();
+            MenuItem menu = new MenuItem("Menu");          
+            MenuItem Quitter = new MenuItem("Quitter");
+            MenuItem Rejouer = new MenuItem("Rejouer");
+            mainMenu.MenuItems.Add(menu);
+            Quitter.Click += Quitter_Click;
+            Rejouer.Click += Rejouer_Click;
+            Scorepartie = 0;
+            menu.MenuItems.Add(Quitter);
+            menu.MenuItems.Add(Rejouer);
+            Menu = mainMenu;
+            Lexique = new string[100];
+            //init_lexique;
+            M_a_D = Lexique [new Random().Next(0, Lexique.Length)];
+            Max_Tours = M_a_D.Length + 2;
+
+
+
         }
 
         private void A_Click(object sender, EventArgs e)
@@ -175,5 +199,12 @@ namespace Pendu
         {
 
         }
+
+        private void Timer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

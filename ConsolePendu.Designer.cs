@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Tiret = new System.Windows.Forms.Button();
+            this.Z = new System.Windows.Forms.Button();
             this.Y = new System.Windows.Forms.Button();
             this.X = new System.Windows.Forms.Button();
             this.W = new System.Windows.Forms.Button();
@@ -59,17 +61,16 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.Mancheencours = new System.Windows.Forms.TextBox();
             this.NumeroManche = new System.Windows.Forms.TextBox();
-            this.Z = new System.Windows.Forms.Button();
-            this.Tiret = new System.Windows.Forms.Button();
             this.Afficheur = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Nombreessais = new System.Windows.Forms.TextBox();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ScorePartie = new System.Windows.Forms.TextBox();
+            this.ScorePartie = new System.Windows.Forms.Label();
             this.Rejouer = new System.Windows.Forms.Button();
             this.Quitter = new System.Windows.Forms.Button();
+            this.Timer = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -121,6 +122,26 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // Tiret
+            // 
+            this.Tiret.Location = new System.Drawing.Point(285, 137);
+            this.Tiret.Name = "Tiret";
+            this.Tiret.Size = new System.Drawing.Size(45, 20);
+            this.Tiret.TabIndex = 28;
+            this.Tiret.Text = "-";
+            this.Tiret.UseVisualStyleBackColor = true;
+            this.Tiret.Click += new System.EventHandler(this.Tiret_Click);
+            // 
+            // Z
+            // 
+            this.Z.Location = new System.Drawing.Point(234, 137);
+            this.Z.Name = "Z";
+            this.Z.Size = new System.Drawing.Size(45, 20);
+            this.Z.TabIndex = 27;
+            this.Z.Text = "Z";
+            this.Z.UseVisualStyleBackColor = true;
+            this.Z.Click += new System.EventHandler(this.Z_Click);
             // 
             // Y
             // 
@@ -424,26 +445,6 @@
             this.NumeroManche.TabIndex = 0;
             this.NumeroManche.TextChanged += new System.EventHandler(this.NumeroManche_TextChanged);
             // 
-            // Z
-            // 
-            this.Z.Location = new System.Drawing.Point(234, 137);
-            this.Z.Name = "Z";
-            this.Z.Size = new System.Drawing.Size(45, 20);
-            this.Z.TabIndex = 27;
-            this.Z.Text = "Z";
-            this.Z.UseVisualStyleBackColor = true;
-            this.Z.Click += new System.EventHandler(this.Z_Click);
-            // 
-            // Tiret
-            // 
-            this.Tiret.Location = new System.Drawing.Point(285, 137);
-            this.Tiret.Name = "Tiret";
-            this.Tiret.Size = new System.Drawing.Size(45, 20);
-            this.Tiret.TabIndex = 28;
-            this.Tiret.Text = "-";
-            this.Tiret.UseVisualStyleBackColor = true;
-            this.Tiret.Click += new System.EventHandler(this.Tiret_Click);
-            // 
             // Afficheur
             // 
             this.Afficheur.Location = new System.Drawing.Point(252, 63);
@@ -515,10 +516,10 @@
             // 
             // ScorePartie
             // 
-            this.ScorePartie.Location = new System.Drawing.Point(3, 3);
-            this.ScorePartie.Multiline = true;
+            this.ScorePartie.AutoSize = true;
+            this.ScorePartie.Location = new System.Drawing.Point(4, 4);
             this.ScorePartie.Name = "ScorePartie";
-            this.ScorePartie.Size = new System.Drawing.Size(104, 55);
+            this.ScorePartie.Size = new System.Drawing.Size(0, 13);
             this.ScorePartie.TabIndex = 0;
             // 
             // Rejouer
@@ -541,11 +542,22 @@
             this.Quitter.UseVisualStyleBackColor = true;
             this.Quitter.Click += new System.EventHandler(this.Quitter_Click);
             // 
+            // Timer
+            // 
+            this.Timer.AutoSize = true;
+            this.Timer.Location = new System.Drawing.Point(740, 128);
+            this.Timer.Name = "Timer";
+            this.Timer.Size = new System.Drawing.Size(0, 13);
+            this.Timer.TabIndex = 9;
+            this.Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Timer.Click += new System.EventHandler(this.Timer_Click);
+            // 
             // Pendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.Timer);
             this.Controls.Add(this.Quitter);
             this.Controls.Add(this.Rejouer);
             this.Controls.Add(this.splitContainer3);
@@ -623,9 +635,11 @@
         private System.Windows.Forms.TextBox Nombreessais;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox ScorePartie;
+        
         private System.Windows.Forms.Button Rejouer;
         private System.Windows.Forms.Button Quitter;
+        private System.Windows.Forms.Label Timer;
+        private System.Windows.Forms.Label ScorePartie;
     }
 }
 
