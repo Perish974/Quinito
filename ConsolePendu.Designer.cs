@@ -71,6 +71,7 @@
             this.Rejouer = new System.Windows.Forms.Button();
             this.Quitter = new System.Windows.Forms.Button();
             this.Timer = new System.Windows.Forms.Label();
+            this.Menu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -552,11 +553,22 @@
             this.Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Timer.Click += new System.EventHandler(this.Timer_Click);
             // 
+            // Menu
+            // 
+            this.Menu.Location = new System.Drawing.Point(13, 13);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(75, 23);
+            this.Menu.TabIndex = 10;
+            this.Menu.Text = "Menu";
+            this.Menu.UseVisualStyleBackColor = true;
+            this.Menu.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Pendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.Menu);
             this.Controls.Add(this.Timer);
             this.Controls.Add(this.Quitter);
             this.Controls.Add(this.Rejouer);
@@ -640,6 +652,7 @@
         private System.Windows.Forms.Button Quitter;
         private System.Windows.Forms.Label Timer;
         private System.Windows.Forms.Label ScorePartie;
+        private System.Windows.Forms.Button Menu;
     }
 }
 

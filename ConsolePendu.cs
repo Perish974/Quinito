@@ -15,9 +15,13 @@ namespace Pendu
         private int Scorepartie;
         private int Scoremanche;
         private int Max_Tours;
-        private static string M_a_D;
-        //public char[] Mot_Courant;
+        private static string Mot_a_D;
+        public char[] Mot_Courant;
         private static string[] Lexique;
+        public String LettresCherches { get; set; }
+        public int CoupsRestants { get; set; }
+        public String Mot { get; set; }
+
         public Pendu()
         {
             InitializeComponent();
@@ -27,18 +31,69 @@ namespace Pendu
             MenuItem Rejouer = new MenuItem("Rejouer");
             mainMenu.MenuItems.Add(menu);
             Quitter.Click += Quitter_Click;
-            Rejouer.Click += Rejouer_Click;
-            Scorepartie = 0;
+            Rejouer.Click += Rejouer_Click;            
             menu.MenuItems.Add(Quitter);
             menu.MenuItems.Add(Rejouer);
-            Menu = mainMenu;
+            base.Menu = mainMenu;
             Lexique = new string[100];
             //init_lexique;
-            M_a_D = Lexique [new Random().Next(0, Lexique.Length)];
-            Max_Tours = M_a_D.Length + 2;
+            Mot_a_D = Lexique [new Random().Next(0, Lexique.Length)];
+            //Max_Tours = Mot_a_D.Length + 2;
+            Mot_Courant = new char[Mot_a_D.Length];
+            LettresCherches = "";
+            Scorepartie = 0;
+            CoupsRestants = 7;
+            //init Mot_courant();
+           // this.label1.Text = char.tostring(Mot_Courant);
 
+            for (int i = 0; i < Mot_a_D.Length; i++)
+             {
+                 Mot_a_D += "*";
+             }         
 
+            void TesteLettre(char lettre)
+            {  
+                 lettre = lettre.ToString().ToUpper()[0];
+                 if (!LettresCherches.Contains(lettre))
+                 {
+                     LettresCherches += lettre;
+                     if (!Mot.Contains(lettre))
+                     {
+                         CoupsRestants--;
+                     }
 
+                     //Mot_a_D = "";
+                     foreach (char l in Mot)
+                     {
+                         if (LettresCherches.Contains(l))
+                         {
+                             Mot_a_D += l;
+                         }
+                         else
+                         {
+                             Mot_a_D += '-';
+                         }
+                     }
+                 }
+            }
+
+            bool perdu = false;
+            bool gagne = false;
+
+           /* if (!bon)
+            {
+                MessageBox.Show("Perdu ! Il vous reste " + (Max_Tours - CoupsRestants) + " essais.");
+            }*/
+            if (CoupsRestants == Max_Tours)
+            {
+                MessageBox.Show("Désolé... Vous avez perdu.");
+                perdu = true;
+            }
+            if (Enumerable.SequenceEqual(lettres, trouvees))
+            {
+                MessageBox.Show("Bravo ! Vous avez gagné !");
+                gagne = true;
+            }
         }
 
         private void A_Click(object sender, EventArgs e)
@@ -205,6 +260,9 @@ namespace Pendu
 
         }
 
-      
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
