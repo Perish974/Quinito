@@ -1,0 +1,10 @@
+C:\Users\CDA\source\repos\poilaucul\bin\Debug\poilaucul.exe.config
+C:\Users\CDA\source\repos\poilaucul\bin\Debug\poilaucul.exe
+C:\Users\CDA\source\repos\poilaucul\bin\Debug\poilaucul.pdb
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.csprojAssemblyReference.cache
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.LancementDuPendu.resources
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.Properties.Resources.resources
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.csproj.GenerateResource.cache
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.csproj.CoreCompileInputs.cache
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.exe
+C:\Users\CDA\source\repos\poilaucul\obj\Debug\poilaucul.pdb

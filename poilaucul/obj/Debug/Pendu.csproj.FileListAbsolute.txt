@@ -1,0 +1,9 @@
+E:\Pendupoilaucul\poilaucul\obj\Debug\Pendu.LancementDuPendu.resources
+E:\Pendupoilaucul\poilaucul\obj\Debug\poilaucul.Properties.Resources.resources
+E:\Pendupoilaucul\poilaucul\obj\Debug\Pendu.csproj.GenerateResource.cache
+E:\Pendupoilaucul\poilaucul\obj\Debug\Pendu.csproj.CoreCompileInputs.cache
+E:\Pendupoilaucul\poilaucul\obj\Debug\poilaucul.exe
+E:\Pendupoilaucul\poilaucul\obj\Debug\poilaucul.pdb
+E:\Pendupoilaucul\poilaucul\bin\Debug\poilaucul.exe.config
+E:\Pendupoilaucul\poilaucul\bin\Debug\poilaucul.exe
+E:\Pendupoilaucul\poilaucul\bin\Debug\poilaucul.pdb
