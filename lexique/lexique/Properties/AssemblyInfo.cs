@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("Pendu")]
+[assembly: AssemblyTitle("lexique")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("AFPA")]
-[assembly: AssemblyProduct("Pendu")]
+[assembly: AssemblyProduct("lexique")]
 [assembly: AssemblyCopyright("Copyright © AFPA 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("1a18611a-e1ef-455c-8db3-8983f7ba36fb")]
+[assembly: Guid("78291ffd-e950-4f41-aad9-18db32e57bbd")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A18611A-E1EF-455C-8DB3-8983F7BA36FB}</ProjectGuid>
+    <ProjectGuid>{78291FFD-E950-4F41-AAD9-18DB32E57BBD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Pendu</RootNamespace>
-    <AssemblyName>Pendu</AssemblyName>
+    <RootNamespace>lexique</RootNamespace>
+    <AssemblyName>lexique</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="lexique">
-      <HintPath>..\lexique\lexique\bin\Debug\lexique.exe</HintPath>
-    </Reference>
-    <Reference Include="poilaucul, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\poilaucul.exe</HintPath>
-    </Reference>
-    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsolePendu.cs">
+    <Compile Include="lexique.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsolePendu.Designer.cs">
-      <DependentUpon>ConsolePendu.cs</DependentUpon>
+    <Compile Include="lexique.Designer.cs">
+      <DependentUpon>lexique.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConsolePendu.resx">
-      <DependentUpon>ConsolePendu.cs</DependentUpon>
+    <EmbeddedResource Include="lexique.resx">
+      <DependentUpon>lexique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,8 +79,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

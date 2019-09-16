@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pendu
+namespace lexique
 {
-    public class Program
+    static class Program
     {
         /// <summary>
         /// Point d'entrée principal de l'application.
@@ -16,7 +16,7 @@ namespace Pendu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConsolePendu());
+            Application.Run(new lexique());
         }
     }
 }
